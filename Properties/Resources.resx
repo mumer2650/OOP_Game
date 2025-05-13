@@ -118,49 +118,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ambulance" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\ambulance.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bronze" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\bronze.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="carGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\carGreen.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="carGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\carGrey.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="carOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\carOrange.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="carPink" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\carPink.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CarRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\CarRed.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="carYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\carYellow.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="explosion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\explosion.gif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\gold.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="hit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\hit.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="roadTrack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\roadTrack.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\gold1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\silver.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\silver1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ambulance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ambulance1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carGrey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CarRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CarRed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bronze" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bronze1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carPink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carPink1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TruckBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\TruckBlue.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\TruckBlue1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TruckWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\TruckWhite.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="explosion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\explosion1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carGreen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513182017" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513182017.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513182014" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513182014.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513181958" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513181958.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513182001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513182001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513181955" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513181955.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513182003" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513182003.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513182007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513182007.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513182022" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513182022.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
