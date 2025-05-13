@@ -46,17 +46,88 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UI\Form1.cs">
+    <Compile Include="Source\BL\Level.cs" />
+    <Compile Include="Source\BL\Player.cs" />
+    <Compile Include="Source\BL\Score.cs" />
+    <Compile Include="Source\BL\Track.cs" />
+    <Compile Include="Source\BL\Traffic.cs" />
+    <Compile Include="Source\BL\TrafficCar1.cs" />
+    <Compile Include="Source\BL\TrafficCar2.cs" />
+    <Compile Include="Source\BL\TrafficCar3.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Source\UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Form1.Designer.cs">
+    <Compile Include="Source\UI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\UI\Level1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\UI\Level1.Designer.cs">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\UI\Level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\UI\Level2.Designer.cs">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\UI\Level3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\UI\Level3.Designer.cs">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\UI\Level4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\UI\Level4.Designer.cs">
+      <DependentUpon>Level4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\UI\Level5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\UI\Level5.Designer.cs">
+      <DependentUpon>Level5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\UI\Level6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\UI\Level6.Designer.cs">
+      <DependentUpon>Level6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\UI\select_level.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\UI\select_level.Designer.cs">
+      <DependentUpon>select_level.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\UI\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\UI\Level1.resx">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\UI\Level2.resx">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\UI\Level3.resx">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\UI\select_level.resx">
+      <DependentUpon>select_level.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -72,8 +143,65 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BL\" />
-    <Folder Include="DL\" />
+    <Folder Include="Documentations\" />
+    <Folder Include="ERD\" />
+    <Folder Include="NewFolder1\" />
+    <Folder Include="Source\DL\" />
+    <Folder Include="UI Drafts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarRed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carPink1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TruckBlue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulance1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carGreen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carGrey1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bronze1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silver1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS20250513182017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS20250513182014.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS20250513181958.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS20250513182001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS20250513181955.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS20250513182003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS20250513182007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS20250513182022.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
