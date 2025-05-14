@@ -15,37 +15,140 @@ namespace Car_Racing_Game.UI
     {
         Player player;
         Traffic traffic;
+        TrafficCar1 Car1;
+        TrafficCar2 Car2;
+        TrafficCar3 Car3;
+        Score score;
+        int value;
+
         public Level1()
         {
             InitializeComponent();
+            timer1.Stop();
+
+            load_objects();
+            player.SetSpeed(10);
+            traffic.SetTrafficSpeed(15);
+            explotion.Visible = false;
+            award.Visible = false;
+            RESET.Enabled = false;
+            BACK.Enabled = false;
+            value = 0;
+        }
+        private void load_objects()
+        {
             player = new Player();
             traffic = new Traffic();
-            player.SetSpeed(10);
-            traffic.SetTrafficSpeed(10);
+            Car1 = new TrafficCar1();
+            Car2 = new TrafficCar2();
+            Car3 = new TrafficCar3();
+            score = new Score();
         }
-
 
         // timer function
         private void timer1_Tick(object sender, EventArgs e)
         {
+            // score display
+            scoreLabel.Text = score.GetScore().ToString();
+
+            // movement of player
+            player.MovePlayer(CarPlayer, player.GetSpeed());
+
+
+            // movement of traffic cars 1
+            Car1.MoveTrafficCar(TrafficCar1, traffic.GetTrafficSpeed());
+            if (TrafficCar1.Top > 750)
+            {
+                //Car1.ChangeCarImage(TrafficCar1);
+                Car1.MoveCarToTop(TrafficCar1);
+            }
+
+            // movement of traffic cars 2
+            Car2.MoveTrafficCar(TrafficCar2, traffic.GetTrafficSpeed());
+            if (TrafficCar2.Top > 750)
+            {
+                //Car2.ChangeCarImage(TrafficCar2);
+                Car2.MoveCarToTop(TrafficCar2);
+            }
+
+            // movement of traffic cars 3
+            Car3.MoveTrafficCar(TrafficCar3, traffic.GetTrafficSpeed());
+            if (TrafficCar3.Top > 750)
+            {
+                //Car3.ChangeCarImage(TrafficCar3);
+                Car3.MoveCarToTop(TrafficCar3);
+            }
+
+
+            // collision detection
+            if (CarPlayer.Bounds.IntersectsWith(TrafficCar1.Bounds) || CarPlayer.Bounds.IntersectsWith(TrafficCar2.Bounds) || CarPlayer.Bounds.IntersectsWith(TrafficCar3.Bounds))
+            {
+                PlaySound();
+                game_over();
+            }
+
+
+            // track movement 
             track1.Top += traffic.GetTrafficSpeed();
             track2.Top += traffic.GetTrafficSpeed();
             track3.Top += traffic.GetTrafficSpeed();
 
 
-            if (track1.Top > 743)
+            if (track1.Top > 744)
             {
-                track1.Top = -600;
+                track1.Top = -720;
             }
-            if (track2.Top > 743)
+            if (track2.Top > 744)
             {
-                track2.Top = -600;
+                track2.Top = -720;
             }
-            if (track3.Top > 743)
+            if (track3.Top > 744)
             {
-                track3.Top = -600;
+                track3.Top = -720;
             }
 
+            // score addition
+            value++;
+            if (value % 10 == 0)
+            {
+                score.AddScore(1);
+            }
+
+        }
+        private void restart_game()
+        {
+            timer1.Start();
+            explotion.Visible = false;
+            award.Visible = false;
+            score.ResetScore();
+            value = 0;
+        }
+
+        private void PlaySound()
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+            player.SoundLocation = "D:\\SecondSemester\\OOP\\Game_recource\\hit.wav";
+            player.Play();
+        }
+
+        private void game_over()
+        {
+
+            timer1.Stop();
+            //button1.Enabled = true;
+            // show explosion
+            explotion.Visible = true;
+            CarPlayer.Controls.Add(explotion);
+            explotion.BringToFront();
+            explotion.Location = new Point(-8, 5);
+            explotion.BackColor = Color.Transparent;
+
+            RESET.Enabled = true;
+            BACK.Enabled = true;
+            award.Visible = true;
+            Score.GiveAward(award, score.GetScore());
+
+            return;
         }
 
         private void Level1_KeyDown(object sender, KeyEventArgs e)
@@ -70,6 +173,14 @@ namespace Car_Racing_Game.UI
             {
                 player.SetGoRight(false);
             }
+        }
+
+
+        // start 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            restart_game();
+            button1.Enabled = false;
         }
     }
 }
