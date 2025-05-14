@@ -110,6 +110,7 @@
             this.BACK.TabIndex = 12;
             this.BACK.Text = "BACK";
             this.BACK.UseVisualStyleBackColor = false;
+            this.BACK.Click += new System.EventHandler(this.BACK_Click);
             // 
             // panel3
             // 
@@ -137,6 +138,7 @@
             this.RESET.TabIndex = 12;
             this.RESET.Text = "RESTART";
             this.RESET.UseVisualStyleBackColor = false;
+            this.RESET.Click += new System.EventHandler(this.RESET_Click);
             // 
             // button1
             // 

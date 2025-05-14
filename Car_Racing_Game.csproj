@@ -145,7 +145,6 @@
   <ItemGroup>
     <Folder Include="Documentations\" />
     <Folder Include="ERD\" />
-    <Folder Include="NewFolder1\" />
     <Folder Include="Source\DL\" />
     <Folder Include="UI Drafts\" />
   </ItemGroup>

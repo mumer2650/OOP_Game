@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Car_Racing_Game.BL;
+using Car_Racing_Game.Properties;
 
 namespace Car_Racing_Game.UI
 {
@@ -181,6 +182,22 @@ namespace Car_Racing_Game.UI
         {
             restart_game();
             button1.Enabled = false;
+        }
+
+
+        // restart
+        private void RESET_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Level2().Show();
+        }
+
+
+        // back
+        private void BACK_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Form1().Show();
         }
     }
 }
