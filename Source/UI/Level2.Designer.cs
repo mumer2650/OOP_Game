@@ -31,9 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level2));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.scoreLabel = new System.Windows.Forms.Label();
             this.explotion = new System.Windows.Forms.PictureBox();
             this.award = new System.Windows.Forms.PictureBox();
             this.TrafficCar3 = new System.Windows.Forms.PictureBox();
@@ -43,9 +40,15 @@
             this.track3 = new System.Windows.Forms.PictureBox();
             this.track2 = new System.Windows.Forms.PictureBox();
             this.track1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.scoreLabel = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.RESET = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.BACK = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.explotion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.award)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrafficCar3)).BeginInit();
@@ -55,6 +58,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.track3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.track2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.track1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -73,36 +79,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(809, 774);
             this.panel1.TabIndex = 0;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 20;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.scoreLabel);
-            this.panel2.Location = new System.Drawing.Point(12, 12);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(352, 774);
-            this.panel2.TabIndex = 3;
-            // 
-            // scoreLabel
-            // 
-            this.scoreLabel.AutoSize = true;
-            this.scoreLabel.BackColor = System.Drawing.Color.Transparent;
-            this.scoreLabel.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreLabel.Location = new System.Drawing.Point(199, 224);
-            this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(27, 30);
-            this.scoreLabel.TabIndex = 9;
-            this.scoreLabel.Text = "0";
             // 
             // explotion
             // 
@@ -206,6 +182,27 @@
             this.track1.TabIndex = 0;
             this.track1.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 20;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.scoreLabel);
+            this.panel2.Location = new System.Drawing.Point(12, 12);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(352, 774);
+            this.panel2.TabIndex = 3;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -222,6 +219,73 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // scoreLabel
+            // 
+            this.scoreLabel.AutoSize = true;
+            this.scoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.scoreLabel.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreLabel.Location = new System.Drawing.Point(177, 221);
+            this.scoreLabel.Name = "scoreLabel";
+            this.scoreLabel.Size = new System.Drawing.Size(27, 30);
+            this.scoreLabel.TabIndex = 9;
+            this.scoreLabel.Text = "0";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.RESET);
+            this.panel3.Location = new System.Drawing.Point(182, 659);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(159, 100);
+            this.panel3.TabIndex = 11;
+            // 
+            // RESET
+            // 
+            this.RESET.BackColor = System.Drawing.Color.Transparent;
+            this.RESET.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RESET.FlatAppearance.BorderSize = 0;
+            this.RESET.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.RESET.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.RESET.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RESET.Font = new System.Drawing.Font("Algerian", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RESET.ForeColor = System.Drawing.Color.Transparent;
+            this.RESET.Location = new System.Drawing.Point(-1, -1);
+            this.RESET.Name = "RESET";
+            this.RESET.Size = new System.Drawing.Size(159, 96);
+            this.RESET.TabIndex = 12;
+            this.RESET.Text = "RESTART";
+            this.RESET.UseVisualStyleBackColor = false;
+            this.RESET.Click += new System.EventHandler(this.RESET_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.BACK);
+            this.panel4.Location = new System.Drawing.Point(3, 659);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(159, 100);
+            this.panel4.TabIndex = 13;
+            // 
+            // BACK
+            // 
+            this.BACK.BackColor = System.Drawing.Color.Transparent;
+            this.BACK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BACK.FlatAppearance.BorderSize = 0;
+            this.BACK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BACK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BACK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BACK.Font = new System.Drawing.Font("Algerian", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BACK.ForeColor = System.Drawing.Color.Transparent;
+            this.BACK.Location = new System.Drawing.Point(-1, -1);
+            this.BACK.Name = "BACK";
+            this.BACK.Size = new System.Drawing.Size(159, 96);
+            this.BACK.TabIndex = 12;
+            this.BACK.Text = "BACK";
+            this.BACK.UseVisualStyleBackColor = false;
+            this.BACK.Click += new System.EventHandler(this.BACK_Click);
+            // 
             // Level2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -236,8 +300,6 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Level2_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Level2_KeyUp);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.explotion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.award)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrafficCar3)).EndInit();
@@ -247,6 +309,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.track3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.track2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.track1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -267,5 +333,9 @@
         private System.Windows.Forms.PictureBox explotion;
         private System.Windows.Forms.Label scoreLabel;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button BACK;
+        private System.Windows.Forms.Button RESET;
     }
 }

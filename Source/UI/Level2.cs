@@ -34,9 +34,9 @@ namespace Car_Racing_Game.UI
             traffic.SetTrafficSpeed(15);
             explotion.Visible = false;
             award.Visible = false;
+            RESET.Enabled = false;
+            BACK.Enabled = false;
             value = 0;
-            
-
         }
 
         private void load_objects()
@@ -86,6 +86,7 @@ namespace Car_Racing_Game.UI
             // collision detection
             if (CarPlayer.Bounds.IntersectsWith(TrafficCar1.Bounds)  || CarPlayer.Bounds.IntersectsWith(TrafficCar2.Bounds)  || CarPlayer.Bounds.IntersectsWith(TrafficCar3.Bounds))
             {
+                PlaySound();
                 game_over();
             }
 
@@ -111,13 +112,18 @@ namespace Car_Racing_Game.UI
 
             // score addition
             value++;
-            score.AddScore(value);
+            if (value % 10 == 0)
+            {
+                score.AddScore(1);
+            }
+            
         }
 
         private void game_over()
         {
+            
             timer1.Stop();
-            button1.Enabled = true;
+            //button1.Enabled = true;
             // show explosion
             explotion.Visible = true;
             CarPlayer.Controls.Add(explotion);
@@ -125,7 +131,8 @@ namespace Car_Racing_Game.UI
             explotion.Location = new Point(-8, 5);
             explotion.BackColor = Color.Transparent;
 
-
+            RESET.Enabled = true;
+            BACK.Enabled = true;
             award.Visible = true;
             Score.GiveAward(award, score.GetScore());
 
@@ -169,6 +176,38 @@ namespace Car_Racing_Game.UI
         {
             restart_game();
             button1.Enabled = false;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PlaySound()
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+            player.SoundLocation = "D:\\SecondSemester\\OOP\\Game_recource\\hit.wav";
+            player.Play();
+        }
+
+
+        // re start
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //this.Hide();
+            //new Level2().Show();
+        }
+
+        private void BACK_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Form1().Show();
+        }
+
+        private void RESET_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Level2().Show();
         }
     }
 }
