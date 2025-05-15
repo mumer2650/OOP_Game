@@ -8,8 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
-using Car_Racing_Game.BL;
 using Car_Racing_Game.UI;
+using Car_Racing_Game.BL;
+using Car_Racing_Game.Source.UI;
 
 namespace Car_Racing_Game
 {
@@ -74,7 +75,7 @@ namespace Car_Racing_Game
             }
             else if (Level._level == 4)
             {
-                Level.Form = new Level4();
+                Level.Form = new newLevel4();
             }
             else if (Level._level == 5)
             {
@@ -91,13 +92,12 @@ namespace Car_Racing_Game
             }
 
             this.Hide();
-
-
             Level.Form.Show();
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
-            //Level2 level1 = new Level2();
-            //level1.Show();
         }
     }
 }

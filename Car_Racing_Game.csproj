@@ -126,6 +126,9 @@
     <EmbeddedResource Include="Source\UI\Level3.resx">
       <DependentUpon>Level3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Source\UI\Level4.resx">
+      <DependentUpon>Level4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Source\UI\select_level.resx">
       <DependentUpon>select_level.cs</DependentUpon>
     </EmbeddedResource>

@@ -12,7 +12,6 @@ namespace Car_Racing_Game.BL
         public override void MoveTrafficCar(PictureBox car,int speed)
         {
             car.Top += speed;
-            
         }
 
         public override void MoveCarToTop(PictureBox car)

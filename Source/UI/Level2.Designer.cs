@@ -42,12 +42,12 @@
             this.track1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.scoreLabel = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.RESET = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.BACK = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.RESET = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.scoreLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.explotion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.award)).BeginInit();
@@ -59,8 +59,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.track2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.track1)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -131,7 +131,7 @@
             this.TrafficCar1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.TrafficCar1.BackgroundImage = global::Car_Racing_Game.Properties.Resources.LS20250513182001;
             this.TrafficCar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TrafficCar1.Location = new System.Drawing.Point(186, 344);
+            this.TrafficCar1.Location = new System.Drawing.Point(189, 343);
             this.TrafficCar1.Margin = new System.Windows.Forms.Padding(0);
             this.TrafficCar1.Name = "TrafficCar1";
             this.TrafficCar1.Size = new System.Drawing.Size(56, 123);
@@ -203,32 +203,33 @@
             this.panel2.Size = new System.Drawing.Size(352, 774);
             this.panel2.TabIndex = 3;
             // 
-            // button1
+            // panel4
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(48, 530);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(254, 84);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.BACK);
+            this.panel4.Location = new System.Drawing.Point(3, 659);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(159, 100);
+            this.panel4.TabIndex = 13;
             // 
-            // scoreLabel
+            // BACK
             // 
-            this.scoreLabel.AutoSize = true;
-            this.scoreLabel.BackColor = System.Drawing.Color.Transparent;
-            this.scoreLabel.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreLabel.Location = new System.Drawing.Point(177, 221);
-            this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(27, 30);
-            this.scoreLabel.TabIndex = 9;
-            this.scoreLabel.Text = "0";
+            this.BACK.BackColor = System.Drawing.Color.Transparent;
+            this.BACK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BACK.FlatAppearance.BorderSize = 0;
+            this.BACK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BACK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BACK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BACK.Font = new System.Drawing.Font("Algerian", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BACK.ForeColor = System.Drawing.Color.Transparent;
+            this.BACK.Location = new System.Drawing.Point(-1, -1);
+            this.BACK.Name = "BACK";
+            this.BACK.Size = new System.Drawing.Size(159, 96);
+            this.BACK.TabIndex = 12;
+            this.BACK.Text = "BACK";
+            this.BACK.UseVisualStyleBackColor = false;
+            this.BACK.Click += new System.EventHandler(this.BACK_Click);
             // 
             // panel3
             // 
@@ -258,33 +259,32 @@
             this.RESET.UseVisualStyleBackColor = false;
             this.RESET.Click += new System.EventHandler(this.RESET_Click);
             // 
-            // panel4
+            // button1
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.BACK);
-            this.panel4.Location = new System.Drawing.Point(3, 659);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(159, 100);
-            this.panel4.TabIndex = 13;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(48, 530);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(254, 84);
+            this.button1.TabIndex = 10;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // BACK
+            // scoreLabel
             // 
-            this.BACK.BackColor = System.Drawing.Color.Transparent;
-            this.BACK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BACK.FlatAppearance.BorderSize = 0;
-            this.BACK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.BACK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.BACK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BACK.Font = new System.Drawing.Font("Algerian", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BACK.ForeColor = System.Drawing.Color.Transparent;
-            this.BACK.Location = new System.Drawing.Point(-1, -1);
-            this.BACK.Name = "BACK";
-            this.BACK.Size = new System.Drawing.Size(159, 96);
-            this.BACK.TabIndex = 12;
-            this.BACK.Text = "BACK";
-            this.BACK.UseVisualStyleBackColor = false;
-            this.BACK.Click += new System.EventHandler(this.BACK_Click);
+            this.scoreLabel.AutoSize = true;
+            this.scoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.scoreLabel.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreLabel.Location = new System.Drawing.Point(177, 221);
+            this.scoreLabel.Name = "scoreLabel";
+            this.scoreLabel.Size = new System.Drawing.Size(27, 30);
+            this.scoreLabel.TabIndex = 9;
+            this.scoreLabel.Text = "0";
             // 
             // Level2
             // 
@@ -311,8 +311,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.track1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
