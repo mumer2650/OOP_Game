@@ -14,7 +14,6 @@ namespace Car_Racing_Game.UI
 {
     public partial class select_level : Form
     {
-
         public static PictureBox selected_level;
         public select_level()
         {
