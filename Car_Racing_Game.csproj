@@ -126,6 +126,9 @@
     <EmbeddedResource Include="Source\UI\Level3.resx">
       <DependentUpon>Level3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Source\UI\Level6.resx">
+      <DependentUpon>Level6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Source\UI\select_level.resx">
       <DependentUpon>select_level.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +204,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LS20250513182022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image May 14, 2025, 08_13_47 PM.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

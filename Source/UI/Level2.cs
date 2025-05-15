@@ -209,5 +209,75 @@ namespace Car_Racing_Game.UI
             this.Close();
             new Level2().Show();
         }
+
+        private void track2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void explotion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void award_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TrafficCar3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TrafficCar2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TrafficCar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CarPlayer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void track3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void track1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void scoreLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
