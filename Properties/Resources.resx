@@ -118,8 +118,41 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gold1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LS20250513182003" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513182003.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TruckBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TruckBlue1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513182022" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513182022.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513181955" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513181955.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513182007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513182007.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carGrey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513181958" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513181958.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513182017" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513182017.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carGreen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="explosion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\explosion1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513182001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513182001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS20250513182014" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS20250513182014.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silver1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,8 +160,11 @@
   <data name="ambulance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ambulance1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carGrey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gold1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carPink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carPink1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CarRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CarRed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,40 +172,7 @@
   <data name="bronze" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bronze1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carPink" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carPink1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TruckBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TruckBlue1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="explosion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\explosion1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carGreen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LS20250513182017" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LS20250513182017.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LS20250513182014" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LS20250513182014.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LS20250513181958" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LS20250513181958.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LS20250513182001" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LS20250513182001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LS20250513181955" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LS20250513181955.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LS20250513182003" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LS20250513182003.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LS20250513182007" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LS20250513182007.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LS20250513182022" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LS20250513182022.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ChatGPT Image May 14, 2025, 08_13_47 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChatGPT Image May 14, 2025, 08_13_47 PM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

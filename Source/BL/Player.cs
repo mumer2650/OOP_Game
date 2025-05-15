@@ -45,7 +45,7 @@ namespace Car_Racing_Game.BL
         {
             if (car.Left > 125 && _goLeft)
             {
-                car.Left -= speed;
+                car.Left -= speed; 
             }
             if (car.Left < 445 && _goRight)
             {
